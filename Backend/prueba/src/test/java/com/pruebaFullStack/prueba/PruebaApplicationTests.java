@@ -1,4 +1,4 @@
-package com.pruebaa.prueba;
+package com.pruebaFullStack.prueba;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

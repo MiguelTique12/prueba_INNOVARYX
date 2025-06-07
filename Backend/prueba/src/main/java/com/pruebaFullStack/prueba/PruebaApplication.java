@@ -1,4 +1,4 @@
-package com.pruebaa.prueba;
+package com.pruebaFullStack.prueba;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
