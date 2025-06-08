@@ -4,6 +4,7 @@ import com.pruebaFullStack.prueba.model.Presupuesto;
 import com.pruebaFullStack.prueba.model.dto.PresupuestoRequestDTO;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Component
@@ -15,7 +16,7 @@ public class PresupuestoMapper {
   public Presupuesto toEntity(PresupuestoRequestDTO dto) {
     return Presupuesto.builder()
         .nombre(dto.getNombre())
-        .fecha(dto.getFecha())
+        .fecha(dto.getFecha() != null ? dto.getFecha() : LocalDate.now())
         .montoTotal(dto.getMontoTotal())
         .estado(dto.getEstado())
         .build();
@@ -28,7 +29,7 @@ public class PresupuestoMapper {
     return Presupuesto.builder()
         .id(id)
         .nombre(dto.getNombre())
-        .fecha(dto.getFecha())
+        .fecha(dto.getFecha() != null ? dto.getFecha() : LocalDate.now())
         .montoTotal(dto.getMontoTotal())
         .estado(dto.getEstado())
         .build();

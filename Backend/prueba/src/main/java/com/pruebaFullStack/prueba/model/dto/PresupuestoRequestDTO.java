@@ -20,7 +20,6 @@ public class PresupuestoRequestDTO {
   @NotBlank(message = "El nombre es obligatorio")
   private String nombre;
 
-  @NotNull(message = "La fecha es obligatoria")
   private LocalDate fecha;
 
   @NotNull(message = "El monto total es obligatorio")

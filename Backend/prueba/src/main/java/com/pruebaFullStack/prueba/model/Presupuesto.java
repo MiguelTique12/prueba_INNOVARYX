@@ -29,7 +29,6 @@ public class Presupuesto {
   @Column(nullable = false)
   private String nombre;
 
-  @NotNull(message = "La fecha es obligatoria")
   @Column(nullable = false)
   private LocalDate fecha;
 
