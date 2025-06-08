@@ -51,10 +51,6 @@ const PresupuestoForm: React.FC<PresupuestoFormProps> = ({
             newErrors.montoTotal = 'El monto debe ser un número mayor a 0';
         }
 
-        if (!formData.fecha) {
-            newErrors.fecha = 'La fecha es requerida';
-        }
-
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
