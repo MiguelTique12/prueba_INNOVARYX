@@ -23,6 +23,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/presupuestos")
+@CrossOrigin(origins = "*")
 @Tag(name = "Presupuesto Management", description = "Endpoints para gestionar presupuestos")
 public class PresupuestoController {
 
